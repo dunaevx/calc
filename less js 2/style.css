@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-color: rgb(205, 43, 226);
     color: #fff;
@@ -110,7 +110,7 @@ input[type="number"] {
 .board{
     width: 500px;
     height: auto;
-
+    margin-right: 200PX;
 }
 
 .board h1{
@@ -120,10 +120,10 @@ input[type="number"] {
 
 .section{
     width: 100%;
-    min-height: 425px;
+    min-height: 455px;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .hist{
@@ -189,7 +189,7 @@ label{
 /* footer */
 
 footer{
-    width: 100vw;
+    width: 100%;
     height: 100px;
 
     display: flex;

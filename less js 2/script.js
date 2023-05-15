@@ -196,36 +196,36 @@ window.onload = function () {
 }
 
 
-window.onload = function () {
+// window.onload = function () {
 
-    var button = document.querySelector(".button1");
-    var circle = document.querySelector(".circle1");
-    var timer;
-    button.addEventListener("click", (e) => {
+//     var button = document.querySelector(".button1");
+//     var circle = document.querySelector(".circle1");
+//     var timer;
+//     button.addEventListener("click", (e) => {
 
-        if (typeof timer != "undefined") {
-            clearInterval(timer);
-        }
+//         if (typeof timer != "undefined") {
+//             clearInterval(timer);
+//         }
 
-        let xAxis = e.pageX;
-        let yAxis = e.pageY;
-        let width = 0;
-        let opacity = "1";
+//         let xAxis = e.pageX;
+//         let yAxis = e.pageY;
+//         let width = 0;
+//         let opacity = "1";
 
-        timer = setInterval(function () {
-            width++; //увеличиваем ширину кружочка на единицу
-            let w = width + "px"; //добавляем единицу измерения - пиксели
-            circle.style.width = w; //устанавливаем ширину кружочка
-            circle.style.height = w; //устанавливаем высоту кружочка
-            circle.style.opacity = opacity; //устанавливаем непрозрачность кружочка
-            circle.style.left = xAxis - button.offsetLeft - width / 2 + "px";  //вычисляем отступ слева относительно родительского элемента - кнопки
-            circle.style.top = yAxis - button.offsetTop - width / 2 + "px"; //вычисляем отступ сверху 
-            opacity = opacity - 0.01; //уменьшаем непрозрачность на 0.01
-            //далее если кружочек дорос до 100 пикселей, останавливаем таймер
-            if (getComputedStyle(circle).width === "100px") {
-            clearInterval(timer);
-            }
-            }, 3);
-    });
+//         timer = setInterval(function () {
+//             width++; //увеличиваем ширину кружочка на единицу
+//             let w = width + "px"; //добавляем единицу измерения - пиксели
+//             circle.style.width = w; //устанавливаем ширину кружочка
+//             circle.style.height = w; //устанавливаем высоту кружочка
+//             circle.style.opacity = opacity; //устанавливаем непрозрачность кружочка
+//             circle.style.left = xAxis - button.offsetLeft - width / 2 + "px";  //вычисляем отступ слева относительно родительского элемента - кнопки
+//             circle.style.top = yAxis - button.offsetTop - width / 2 + "px"; //вычисляем отступ сверху 
+//             opacity = opacity - 0.01; //уменьшаем непрозрачность на 0.01
+//             //далее если кружочек дорос до 100 пикселей, останавливаем таймер
+//             if (getComputedStyle(circle).width === "100px") {
+//             clearInterval(timer);
+//             }
+//             }, 3);
+//     });
 
-}
+// }
