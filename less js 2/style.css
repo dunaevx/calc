@@ -109,6 +109,7 @@ input[type="number"] {
     
 .board{
     width: 500px;
+    height: auto;
 
 }
 
@@ -117,14 +118,27 @@ input[type="number"] {
     font-size: 30px;
 }
 
-section{
+.section{
     width: 100%;
-    height: calc(100vh - 200px);
+    min-height: 425px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.hist{
+  margin-right: 25px;
+}
+
+.hist p{
+  color: #ccc;
+}
+.section1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .content{
     display: flex;
@@ -141,7 +155,7 @@ h2{
 
 
 /* BITTON */
-.button {
+.button, .button1 {
     background: linear-gradient(30deg, #8729ca, #40eaf3);
     width: 120px;
     height: 40px;
@@ -151,7 +165,7 @@ h2{
     box-shadow: 22px 7px 50px -26px linear-gradient(#8729ca, #40eaf3);
 }
 
-.circle {
+.circle, .circle1 {
     background: white;
     position: absolute;
     border-radius: 50%;
